@@ -268,17 +268,28 @@ section.experience{
 
 }
 
-/*Contato*/
-
-section.formcontato{
-
+div.experiencie__box{
+    background-color: beige;
+    display: flex;
+    padding: 8%
+    margin-left: 32px;
+    align-content: center;
 }
 
-<h3.formcontato__title{
-    font-size: 22px;
+img.experience__img{
+    padding-left: 50px;
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+div.experience__info{
+    padding: 8%;
+    position: relative; 
     text-align: center;
 }
 
+/*Contato*/
 
 img.formcontato__img{
     padding: 10px;
@@ -286,8 +297,34 @@ img.formcontato__img{
     border-radius: 400px;
 }
 
-    
+form.formcontato__form{
+    display: block;
+    padding: 0.5%;
+    margin: 5px;
+}
 
+p.formcontato__subtext{
+    margin-left: 14px;
+}
+
+input.formcontato__input{
+    display: block;
+    padding: 0.5%;
+    margin: 5px;
+    width: 40em;
+}
+
+textarea.formcontato__textarea{
+    display: block;
+    padding: 0.5%;
+    margin: 5px;
+    width: 40em;
+}
+
+button.formcontato__botao{
+    padding: 2%;
+    margin: 5px;
+}
 
 /*footer*/
 
