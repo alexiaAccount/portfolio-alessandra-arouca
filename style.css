@@ -5,12 +5,16 @@ coloque nas sessões indicadas*/
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
-   --cor-titulos: #464646;
-   --color-fundo-azul: #EAF2FD;
+   --cor-de-fundo: #F2F2EF;
+   --cor-de-link: #29231A;
+   --cor-de-hover: #FED815;
+   --cor-titulos: #62b4c4;
+   --color-fundo-ouro: #FED815;
    --color-caixas: #fbfbfb;
    --azul-botoes: #2A7AE4;
+   --cor-de-fundo-cereja: #FA6243;
+   --cor-de-fundo-azul: #1946bb;
+   --cor-de-texto-verde: #96ffca;
 }
 
 body {
@@ -23,10 +27,6 @@ body {
 }
 ol, ul,li {
     list-style: none;
-}
-a{
-    text-decoration: none;
-    color: var(--cor-de-link);
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -57,7 +57,7 @@ section header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 700;
+    font-weight: 500;
     color: var(--cor-titulos);
 }
 
@@ -65,9 +65,20 @@ section header{
 nav ul.menu__list{
     display: flex;
     justify-content: space-between;
-    width: 750px;
+    width: 700px;
     font-size: 16px;
 }
+
+nav a {
+    color: var(--cor-de-link);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #62b4c4;
+    text-decoration: none;
+}
+
 
 /* ajuste de icone */
 header img{
@@ -122,15 +133,26 @@ div.title__container{
         width: 500px;
     }
 
+    section.title div.title__container ul.title__network a{
+        color: var(--cor-de-link);
+        text-decoration: none;
+    }
+
+    section.title div.title__container ul.title__network a:hover {
+        color: var(--cor-de-texto-verde);
+        text-decoration: none;
+}
+
 /*Sessão About*/
 section.about{
     padding: 62px 164px;
-    background-color: var(--color-fundo-azul);
+    background-color: var(--cor-de-fundo-azul);
 }
 
 /*titulo da sessao about*/
 section.about{
     font-size: 32px;
+    color: #62b4c4;
 }
 
 .about__container{
@@ -153,11 +175,12 @@ section.about div.about__container img{
 section.info h3{
     font-size: 22px;
     text-align: center;
+    color: #62b4c4;
 }
 
 /*espaçamento das sessões*/
 section.info{
-    padding: 64px 100px;
+    padding: 64px;
 }
 
 /*Sessão Skills*/
@@ -218,7 +241,7 @@ section.info div.hobbies__line div.hobbies__box{
 
 section.info div.academic__container{
     padding: 64px 0;
-    background-color: var(--color-fundo-azul);
+    background-color: var(--cor-de-fundo-cereja);
 }
 
 
@@ -269,7 +292,7 @@ section.experience{
 }
 
 div.experiencie__box{
-    background-color: beige;
+    background-color: var(--color-fundo-ouro);
     display: flex;
     padding: 8%
     margin-left: 32px;
@@ -278,9 +301,10 @@ div.experiencie__box{
 
 img.experience__img{
     padding-left: 50px;
+    margin: 32px;
     position: relative;
     display: inline-block;
-    width: 50%;
+    width: 500px;
 }
 
 div.experience__info{
