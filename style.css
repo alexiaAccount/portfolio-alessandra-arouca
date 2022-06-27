@@ -181,6 +181,8 @@ section.info h3{
     color: var(--cor-de-link);
 }
 
+
+
 /*espaçamento das sessões*/
 section.info{
     padding: 64px;
@@ -301,10 +303,13 @@ div.experience{
 div.experiencie__box{
     display: flex;
     padding: 8%
-    margin-left: 32px;
     align-content: center;
     
 }
+
+
+
+
 
 div.experience__box:nth-child(2){
     display: flex;
@@ -333,21 +338,58 @@ div.experience__info{
     text-align: center;
 }
 
+button.experiencia__botao--repo {
+	width: 100px;
+	height: 47px;
+	margin-left: 20px;
+	background: var(--cor-de-fundo);
+	border: none;
+	border-radius: 24px;
+	color: var(--cor-de-link);
+	cursor: pointer;
+	box-shadow: 0 3px #999;
+}
+
+button.experiencia__botao--repo:hover {
+    background-color: var(--cor-de-hover) 
+}
+
+
+button.experiencia__botao--demo {
+	width: 100px;
+	height: 47px;
+	margin-left: 20px;
+	background: var(--cor-de-fundo);
+	border: none;
+	border-radius: 24px;
+	color: var(--cor-de-link);
+	cursor: pointer;
+	box-shadow: 0 3px #999;
+}
+
+button.experiencia__botao--demo:hover {
+    background-color: var(--cor-de-hover) 
+}
+
+
 /*Contato*/
 
 div.contato{
     background-color: var(--cor-de-hover);
-    width: 100%;
-    padding: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+
+
 div.contato h3{
-    font-size: 42px;
+    font-size: 22px;
 }
 
 img.formcontato__img{
     padding: 10px;
-    width: 182px;
+    width: 282px;
     border-radius: 400px;
 }
 
@@ -358,8 +400,11 @@ form.formcontato__form{
 }
 
 p.formcontato__subtext{
-    margin-left: 14px;
+    margin-left: 5px;
+    margin-top: 10px;
 }
+
+
 
 input.formcontato__input{
     display: block;
@@ -375,10 +420,24 @@ textarea.formcontato__textarea{
     width: 40em;
 }
 
-button.formcontato__botao{
-    padding: 2%;
-    margin: 5px;
+
+button.formcontato__botao {
+	width: 150px;
+	height: 67px;
+	margin-left: 20px;
+	background: var(--cor-de-fundo);
+	border: none;
+	border-radius: 24px;
+	color: var(--cor-de-link);
+	cursor: pointer;
+	box-shadow: 0 3px #999;
 }
+
+button.formcontato__botao:hover {
+    background-color: var(--cor-de-fundo-cereja)
+}
+
+
 
 /*footer*/
 section.footer {
