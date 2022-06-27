@@ -8,7 +8,7 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F2F2EF;
    --cor-de-link: #29231A;
    --cor-de-hover: #FED815;
-   --cor-titulos: #62b4c4;
+   --cor-titulos: #1946bb;
    --color-fundo-ouro: #FED815;
    --color-caixas: #fbfbfb;
    --azul-botoes: #2A7AE4;
@@ -58,7 +58,7 @@ section header{
     align-items: center;
     justify-content: space-between;
     font-weight: 500;
-    color: var(--cor-titulos);
+    color: var(--cor-de-link);
 }
 
 /* itens do menu */
@@ -75,9 +75,12 @@ nav a {
 }
 
 nav a:hover {
-    color: #62b4c4;
+    color: var(--cor-de-texto-verde);
     text-decoration: none;
+    transition: 0,5s;
 }
+
+
 
 
 /* ajuste de icone */
@@ -96,9 +99,9 @@ div.title__container{
 
 /* titulo principal */
     div.title__container h2{
-        font-size: 56px;
-        font-weight: 800px;
-        line-height: 50px;
+        font-size: 52px;
+        font-weight: 700px;
+        line-height: 52px;
 }
 
 /*corrigindo as margens entre os elementos*/
@@ -121,7 +124,7 @@ div.title__container{
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 20px;
     }
 
     section.title div.title__container ul.title__network{
@@ -146,13 +149,13 @@ div.title__container{
 /*Sessão About*/
 section.about{
     padding: 62px 164px;
-    background-color: var(--cor-de-fundo-azul);
+    background-color: var(--cor-de-texto-verde);
 }
 
 /*titulo da sessao about*/
 section.about{
     font-size: 32px;
-    color: #62b4c4;
+    color: var(--cor-de-link);
 }
 
 .about__container{
@@ -175,7 +178,7 @@ section.about div.about__container img{
 section.info h3{
     font-size: 22px;
     text-align: center;
-    color: #62b4c4;
+    color: var(--cor-de-link);
 }
 
 /*espaçamento das sessões*/
@@ -241,7 +244,6 @@ section.info div.hobbies__line div.hobbies__box{
 
 section.info div.academic__container{
     padding: 64px 0;
-    background-color: var(--cor-de-fundo-cereja);
 }
 
 
@@ -254,6 +256,7 @@ section.info div.academic__courses{
 
 section.info div.academic__courses__box{
     background-color: var(--color-caixas);
+    align-items: center;
     width: 26,5rem;
     margin: 0 1rem;
 }
@@ -273,9 +276,11 @@ div.academic__courses ul li{
 
 div.academic__courses ul li.academic__courses__item__img{
     background-color: var(--color-caixas);
-    padding: 8%;
-    
+    vertical-align: center;
+    padding: 0;
+    width: 5px;
 }
+
 
 div.academic__courses__box ul li h4{
     margin: 0;
@@ -287,16 +292,31 @@ div.academic__courses__box ul li h4{
 
 /* experiência*/
 
-section.experience{
-
+div.experience{
+    width: 100%;
+    padding: 32px;
+    background-color: var(--color-caixas);
 }
 
 div.experiencie__box{
-    background-color: var(--color-fundo-ouro);
     display: flex;
     padding: 8%
     margin-left: 32px;
     align-content: center;
+    
+}
+
+div.experience__box:nth-child(2){
+    display: flex;
+        align-content: center;
+        justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+div.experience h3{
+    font-size: 22px;
+    text-align: center;
+    color: var(--cor-de-link);
 }
 
 img.experience__img{
@@ -314,6 +334,16 @@ div.experience__info{
 }
 
 /*Contato*/
+
+div.contato{
+    background-color: var(--cor-de-hover);
+    width: 100%;
+    padding: 32px;
+}
+
+div.contato h3{
+    font-size: 42px;
+}
 
 img.formcontato__img{
     padding: 10px;
@@ -351,9 +381,39 @@ button.formcontato__botao{
 }
 
 /*footer*/
+section.footer {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
 
-section.footer{
-   
+div.formcontato__contato h3{
+    text-align: center;
+}
+  
+  ul.contatos p{
+    color: black;
+    font-size: 14px;
+    margin: 10px 0 0;
+}
+  
+  .contatos{
+      margin-top: 10px;  
+      display: flex;
+      justify-content: center;
+}
+  
+  
+  .contatos img{
+      width: 30px;
+      margin-left: 8px;
+}
+  
+  img:hover, img:focus {
+    background-color: #585858;
+    color: #000000; 
+    transition: 0.5s;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
